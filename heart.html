@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+    <meta name="" content=""/>
+
+    <title>Heart</title>
+
+    <style type="text/css" media="all">
+
+      body {
+
+        margin: 0;
+
+        padding-top: 100px;
+
+        display: flex;
+
+        colour:red;
+
+        align-items: center;
+
+        justify-content: center;
+
+        background:white;
+
+      }
+
+      .heart {
+
+        height: 100px;
+
+        width: 100px;
+
+        position: realtive;
+
+        background-color:red;
+        transform: rotate(-45deg);
+
+        box-shadow: -10px 10px 90px red;
+
+        animation: heart 0.5s linear infinite;
+         align-items: center;
+
+      }
+
+      @keyframes heart {
+
+        0% {
+
+          transform: rotate(-45deg) scale(1.00);
+
+        }
+
+        80% {
+
+          transform: rotate(-45deg) scale(0.90);
+
+        }
+
+        100% {
+
+          transform: rotate(-45deg) scale(0.80);
+
+        }
+
+      }
+
+      .heart::before {
+
+        content: "";
+
+        position: absolute;
+
+        height: 100px;
+
+        width: 100px;
+
+        background: red;
+
+        top: -55%;
+
+        border-radius: 50px;
+
+        box-shadow: -10px 10px 90px red;
+
+      }
+
+      .heart::after {
+
+        content: "";
+
+        position: absolute;
+
+        height: 100px;
+
+        width: 100px;
+
+        background: red;
+
+        right: -55%;
+
+        border-radius: 50px;
+
+        box-shadow: -10px 10px 90px red;
+
+      }
+      
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <div class="heart">
+      
+    </div>
+
+    <header> 
+      <h1>I LOVE YOU</h1>
+    </header>
+    
+
+  </body>
+
+</html>
